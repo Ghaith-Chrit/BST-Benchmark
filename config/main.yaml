@@ -1,0 +1,32 @@
+demo_run: true
+scaling_benchmark_run: false
+scaling_benchmark:
+  min_items: 10
+  max_items: 1e7
+  num_steps: 7
+  queries_ratio: 0.2
+  fix_queries_ratio: true
+  structures_to_test:
+  - avl
+  - treap
+  - rb
+  exclude_structures_above: 
+  - ["avl", 1e7]
+  - ["treap", 1e7]
+  seed: 42
+  num_trials: 3
+  workload: random
+  save_result_path: null
+print_config:
+  plot_avg_per_op: true
+  print_avg_per_op: true
+  plot_throughput: false
+  print_throughput: false
+  plot_rotations: true
+  print_rotations: true
+  plot_heights: true
+  print_heights: true
+  plot_validation: true
+  print_validation: true
+  plot_balance: true
+  print_balance: true
