@@ -143,7 +143,7 @@ The total number of queries is controlled by `queries_ratio`. For example, `quer
 Some data structures are impractical at very large sizes due to memory or runtime constraints. The `exclude_structures_above` setting allows disabling structures when the dataset size exceeds a threshold.
 
 * Each entry is a pair `[structure_name, max_allowed_size]`.
-* For example, `["linear", 100000]` means the linear search structure is only tested up to, and including, datasets of 100,000 items. Beyond that, it is skipped to avoid impractically slow runs.
+* For example, `["avl", 100000]` means the AVL data structure is only tested up to, and including, datasets of 100,000 items. Beyond that, it is skipped to avoid impractically slow runs.
 * Plotting note: When a structure is excluded for larger dataset sizes, its performance curve is linearly extrapolated from its last valid measurement to ensure all structures remain comparable in the plots. Extrapolated segments are dashed.
 
 **num_trials:**
@@ -319,3 +319,4 @@ Treap implementation follows the design outlined in:
   month     = {Jul}
 } 
 ```
+
