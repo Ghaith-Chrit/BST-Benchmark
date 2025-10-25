@@ -109,6 +109,6 @@ class BaseDataStructure(ABC):
         Raises
         ------
         AssertionError
-            If any Red-Black property is violated.
+            If any tree property is violated.
         """
         raise NotImplementedError
