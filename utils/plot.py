@@ -230,15 +230,6 @@ def plot_scaling_results(
         if all(isinstance(v, bool) for v in values):
             ax.set_ylabel("")
         else:
-            # ax.plot(
-            #     dataset_sizes,
-            #     dataset_sizes,
-            #     linestyle=(0, (3, 5, 1, 5)),
-            #     color="black",
-            #     linewidth=1.5,
-            #     label="y = n",
-            # )
-
             ax.set_xscale(x_scale)
             ax.set_yscale(y_scale)
             ax.set_ylabel(title)
